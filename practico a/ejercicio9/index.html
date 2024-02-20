@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <table border=1px>
+        <thead>
+
+            <tr>
+                <th>Nombre </th>
+                <th>Apellido </th>
+                <th>Edad </th>
+                <th>Peso </th>
+                <th>Genero </th>
+
+            </tr>
+        </thead>
+        <tbody id="persona">
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+
+        let dom = document.getElementById("persona");
+
+        let fila = dom.rows[0]; //Sirve para recorrer los tr del id persona
+
+        for (let i = 0; i < persona.length; i++) {
+            fila.cells[i].textContent = persona[i];
+        }
+
+    </script>
+
+</body>
+</html>
