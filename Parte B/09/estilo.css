@@ -1,4 +1,37 @@
+/* 9) Realiza una página que efectúe 3 preguntas de evaluación donde el usuario seleccione a
+través de radio button su respuesta. La página proporcionará la evaluación y las respuestas
+correctas a petición del usuario. */
 
+html {
+    background-image: linear-gradient(to bottom, rgb(132, 132, 238), #e6f2ff);
+    height: 100%;
+ }
+
+body{
+    font-family: Verdana;
+}
+
+#c1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    border: double;
+    padding: 4%;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+#boton{
+    display: flex;
+    justify-content: center;
+}
     
 
 
