@@ -4,18 +4,36 @@ escrita de a una letra por vez y el tiempo entre escritura de la letra debe ser 
 body{
     background-color: rgb(245, 165, 165);
     margin-top: 10%;
+    font-family: cursive;
 }
 
-h1{
+
+h2{
     text-align: center;
+    margin-top: 0%;
 }
 
 #caja{
     display: flex;
     justify-content: center;
+    
 }
+
 label{
     margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+
+#c1{
+
+    border:outset rgb(176, 92, 152);
+    border-width: 6px;
+    padding: 2%;
+    width: 310px;
+}
+
+#c2{
+    display: flex;
+    justify-content: center;
+
 }
