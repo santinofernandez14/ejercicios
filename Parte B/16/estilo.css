@@ -1,0 +1,40 @@
+.p1{
+    border: 8px solid rgb(26, 157, 201);
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+}
+.p1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color:rgb(96, 96, 155);
+    padding: 5px;
+}
+
+.p2{
+    border: 8px solid rgb(62, 170, 62);
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+}
+.p2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: beige;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: lightyellow;
+}
+
