@@ -1,3 +1,6 @@
+/* 17) Realice una página que escriba en un campo de texto una cadena. La cadena debe ser
+escrita de a una letra por vez y el tiempo entre escritura de la letra debe ser 700ms. */
+
 body{
     background-color: rgb(245, 165, 165);
     margin-top: 10%;
@@ -6,6 +9,7 @@ body{
 h1{
     text-align: center;
 }
+
 #caja{
     display: flex;
     justify-content: center;
