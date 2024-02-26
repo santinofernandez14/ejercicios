@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(253, 252, 218);
+    font-family: cursive;
+}
+
+#c1, #boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    border: solid;
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+#usuario{
+    width: 173.5px;
+}
+
+#usuario,#password{
+    border-radius: 15px;
+}
+
+#b1{
+    border-radius: 15px;
+    padding: 3%;
+    font-family: cursive;
+}
+
+
+

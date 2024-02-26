@@ -1,0 +1,34 @@
+body {
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgb(102, 99, 136);
+    background-image: url(imgfondo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#contenedor {
+    justify-content: center;
+    display: flex;
+
+}
+
+#contIMG {
+    width: 500px;
+    height: 390px;
+    border: solid 6px rgb(74, 134, 194);
+    border-radius: 3%;
+}
+
+#contB {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(74, 134, 194);
+}

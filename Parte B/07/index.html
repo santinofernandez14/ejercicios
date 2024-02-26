@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- 7) Realiza una página que muestre un formulario para la conversión de Pesos a Dólares y
+    viceversa. Los campos del formulario han de poder ser limpiados. -->
+
+    <div id="c1">
+        <form id="miformulario">
+            <h2 id="unico">Cambiar pesos a dolares</h2>
+
+            <label for="pesos">Pesos:&nbsp;&nbsp;&nbsp</label>
+            <input type="number" name="pesos" id="pesos" size=20>
+            <br>
+            <br>
+            <label for="dolar">Dolares:</label>
+            <input type="number" name="dolar" id="dolar" size=20>
+            <br>
+            <br>
+            <input id="b1" type="button" value="Convetir a pesos" onclick="cambiarDolarApesos()">
+            <input id="b2" type="button" value="Convetir a dolar" onclick="cambiarPesoADolar()">
+            <input id="b3" type="reset" value="Limpiar">
+        </form>
+    </div>
+</body>
+
+</html>

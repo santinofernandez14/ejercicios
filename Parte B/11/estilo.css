@@ -1,0 +1,18 @@
+/* 11) Realiza una página que muestre una imagen que cambie cuando el ratón pasa por
+encima de la imagen y que vuelva a cambiar cuando salga de ella. */
+
+#contenedor {
+    margin-top: 10%;
+    width: 400px;
+}
+
+#contenedor img {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(34, 33, 33);
+}

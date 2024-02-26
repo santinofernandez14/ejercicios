@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de datos</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- 3) Realizar un formulario donde: la longitud del nombre sea mayor de cuatro caracteres. El
+    nombre sólo debe contener caracteres del alfabeto español (no contiene números ni
+    caracteres no alfanuméricos). La edad sólo debe contener números y estar comprendido
+    entre 18 y 30. La dirección de correo debe incluir una arroba y su longitud sea superior a
+    cinco caracteres. -->
+
+
+    <div id="contenedor">
+
+        <form name="formulario" onsubmit="event.preventDefault(); validar(this.nombre.value, this.email.value)">
+
+            <h2>Ingrese sus datos</h2>
+
+
+
+            <div id="c1">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" size="20" minlength="5" maxlength="20" required>
+                <br>
+                <br>
+            </div>
+
+            <div id="c2">
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad" min="18" max="30" required>
+                <br>
+                <br>
+            </div>
+
+
+            <div id="c3">
+                <label for="email">Correo E</label>
+                <input type="text" name="email" id="email" size="20" minlength="6" maxlength="20" required>
+                <br>
+                <br>
+            </div>
+
+            <br>
+            <div id="c4">
+                <input id="boton" type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

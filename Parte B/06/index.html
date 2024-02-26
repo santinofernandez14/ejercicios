@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body id="contenedor">
+
+    <!-- 6) Realiza una página que muestre cinco cuadrados de diferentes colores. Cuando el ratón
+pase por encima de alguno de ellos el color de fondo será del color de relleno del cuadrado. -->
+
+    <h2>Ejercicio seis</h2>
+
+    <div id="div1">
+
+        <div class="cuadrado" onmouseover="cambiarColor(this)" onmouseout="restablecerColor()"
+            style="background-color: rgb(254, 85, 85);;"></div>
+
+        <div class="cuadrado" onmouseover="cambiarColor(this)" onmouseout="restablecerColor()"
+            style="background-color: rgb(79, 79, 246);"></div>
+
+        <div class="cuadrado" onmouseover="cambiarColor(this)" onmouseout="restablecerColor()"
+            style="background-color: rgb(38, 183, 38);"></div>
+
+        <div class="cuadrado" onmouseover="cambiarColor(this)" onmouseout="restablecerColor()"
+            style="background-color: rgb(245, 245, 172);"></div>
+
+        <div class="cuadrado" onmouseover="cambiarColor(this)" onmouseout="restablecerColor()"
+            style="background-color: rgb(210, 54, 241);"></div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

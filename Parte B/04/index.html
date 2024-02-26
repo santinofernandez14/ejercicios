@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- 4) Realice un formulario para la carga de datos de un CD. Realice las validaciones
+    correspondientes. Por medio de un botón agregar canción se debe habilitar una línea nueva
+    para cargar la canción (nombre, compositor, duración). -->
+
+    <h2>Carga de datos de un CD</h2>
+
+
+    <form id="cd">
+        <div id="c1">
+            <div id="c2">
+                <label for="titulo">Titulo:</label><br>
+                <input class="patronNombre" type="text" id="titulo" name="titulo">
+                <br><br>
+
+                <label for="artista">Artista:</label><br>
+                <input class="patronNombre" type="text" id="artista" name="artista">
+                <br><br>
+
+                <label for="cantidad">Cantidad de temas:</label><br>
+                <input class="patronAño" type="number" id="cantidad" name="cantidad" max="20">
+            </div>
+        </div>
+        <br><br>
+
+        <div id="c6">
+            <div id="c5">
+                <h3>Canciones</h3>
+                <div id="c3">
+                    <div id="canciones">
+
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div id="c4">
+                    <button type="button" id="botonA" onclick="agregarLinea()">Agregar Cancion</button>
+                    <!-- <button type="button" onclick="validar()">Guardar CD</button> -->
+                    <input type="submit" onclick="validar()" value="Guardar CD">
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

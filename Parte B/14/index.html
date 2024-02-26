@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <div id="c1">
+        <form name="form_login">
+
+            <h2>Login</h2>
+            <div id="contUser">
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" id="usuario" size="20" maxlength="20" required>
+
+                <br>
+                <br>
+
+            </div>
+            <div id="contPass">
+                <label for="password">Password:</label>
+                <input type="text" name="password" id="password" size="20" maxlength="20" required>
+                <br>
+                <br>
+            </div>
+
+            <div id="boton">
+
+                <button id="b1" title="boton enviar" alt="boton enviar"
+                    onclick="validar(document.getElementById('usuario').value, document.getElementById('password').value)">Enviar</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

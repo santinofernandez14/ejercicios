@@ -1,0 +1,25 @@
+/* 6) Realiza una página que muestre cinco cuadrados de diferentes colores. Cuando el ratón
+pase por encima de alguno de ellos el color de fondo será del color de relleno del cuadrado. */
+
+body {
+    background-color: rgb(195, 247, 247);
+    transition: background-color 0.5s;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#div1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(195, 247, 247);
+}

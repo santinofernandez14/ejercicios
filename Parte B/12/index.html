@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- 12) Realizar una página que permita modificar (añadir, borrar, modificar) al gusto del usuario
+    los contenidos de un elemento SELECT de un formulario. -->
+
+    <h2>SELECT</h2>
+
+    <div id="c1">
+
+        <form>
+            <div id="c2">
+            <label for="opciones">Selecciona una opcion:</label>
+            <select id="opciones">
+            </select>
+            </div>
+            <br><br>
+
+            <button id="b1" type="button" onclick="agregarOpcion()">Añadir opcion</button>
+            <button id="b2" type="button" onclick="modificarOpcion()">Modificar opcion</button>
+            <button id="b3" type="button" onclick="borrarOpcion()">Borrar opcion</button>
+        </form>
+    </div>
+</body>
+
+</html>
