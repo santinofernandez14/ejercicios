@@ -1,67 +1,59 @@
-DOCTYPE html>
-<html lang="en">
+<DOCTYPE html>
+  <html lang="es">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio5</title>
-    <script src="codigo.js" defer></script>
-    <style>
-        body {
-            background-color: palevioletred;
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" defer></script>
 
-        }
-      div{
-        display: flex;
-        justify-content: center;
-        
-      }
-      form{
-        border: 6px outset pink;
-      }
-      #unico{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-      }
-    </style>
-    <!--
-    Realice una página donde el usuario pueda cargar un contacto. El contacto de esa
+    <!--5) Realice una página donde el usuario pueda cargar un contacto. El contacto de esa
 persona debe tener al menos un teléfono y como máximo 3. Además debe ser obligatoria la
-carga del mail. Realice las validaciones necesarias.
--->
+carga del mail. Realice las validaciones necesarias.-->
 
-</head>
+  </head>
 
-<body>
-    <div>
-    <form action="#" onsubmit="return validar()" method="post" name="formulario">
-        <h1 id="unico"> Ingrese un USUARIO</h1>
-        <label for="apellido" > Apellido:</label>
-        <input type="text" name="apellido" id="apellido">
-        <br>
-        <br>
-        <label for="nombre"> Nombre:</label>
-        <input type="text" name="nombre" id="nombre">
-        <br>
-        <br>
-        <label for="numero"> Numero de contacto</label>
-        <input type="number" name="numero" id="numero">
-        <br>
-        <br>
-        <label for="numero2"> Numero de contacto alternativo</label>
-        <input type="number" name="numero2" id="numero2">
-        <br>
-        <br>
-        <label for="gmail"> Gmail:</label>
-        <input type="text" name="gmail" id="gmail">
-        <br>
-        <br>
-        <input type="submit" value="EnviarDatos">
-
-        <br>
-        <br>
+  <body>
+    <div id="c1">
+      <form action="#" onsubmit="return validar()" method="post" name="formulario">
+        <h2> Ingrese un usuario</h2>
+        <div id="c3">
+          <label for="apellido"> Apellido:</label>
+          <br>
+          <input type="text" name="apellido" id="apellido">
+          <br>
+          <br>
+          <label for="nombre"> Nombre:</label>
+          <br>
+          <input type="text" name="nombre" id="nombre">
+          <br>
+          <br>
+          <label for="numero"> Numero de contacto:</label>
+          <br>
+          <input type="number" name="numero" id="numero">
+          <br>
+          <br>
+          <label for="numero2"> Numero de contacto alternativo</label>
+          <br>
+          <input type="number" name="numero2" id="numero2">
+          <br>
+          <br>
+          <label for="gmail"> Gmail:</label>
+          <br>
+          <input type="text" name="gmail" id="gmail">
+          <br>
+          <br>
+        </div>
+        <div id="boton">
+          <input type="submit" value="EnviarDatos">
+        </div>
+    </div>
+    <br>
+    <br>
     </form>
-</div>
-</body>
+    </div>
+  </body>
 
 
-</html>
+  </html>
