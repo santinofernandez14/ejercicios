@@ -6,7 +6,9 @@ function validar(user, pass) {
 
     if (patronUser.test(user) && patronPass.test(pass)) {
         alert("Datos validos")
+        return true;
     } else {
         alert("Datos incorrectos")
+        return false;
     }
 }
