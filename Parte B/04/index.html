@@ -18,7 +18,7 @@
     <h2>Carga de datos de un CD</h2>
 
 
-    <form id="cd">
+    <form id="cd" onsubmit="return validar()">
         <div id="c1">
             <div id="c2">
                 <label for="titulo">Titulo:</label><br>
@@ -30,7 +30,7 @@
                 <br><br>
 
                 <label for="cantidad">Cantidad de temas:</label><br>
-                <input class="patronAño" type="number" id="cantidad" name="cantidad" max="20">
+                <input class="patronCantidad" type="number" id="cantidad" name="cantidad" max="20">
             </div>
         </div>
         <br><br>
@@ -49,7 +49,7 @@
                 <div id="c4">
                     <button type="button" id="botonA" onclick="agregarLinea()">Agregar Cancion</button>
                     <!-- <button type="button" onclick="validar()">Guardar CD</button> -->
-                    <input type="submit" onclick="validar()" value="Guardar CD">
+                    <input type="submit" value="Guardar CD">
                 </div>
             </div>
         </div>

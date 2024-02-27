@@ -41,46 +41,47 @@ function testear(expresion, asd) {
 }
 
 function validar() {
-    let patronNombres = /^[a-zA-Z\s]+$/
-    let patronAño = /^\d{4}$/
-    let patronDuracion = /^(\d{2}):(\d{2})$/
+
+    let patrones = [/^[a-zA-Z\s]+$/, /^\d{1,2}$/, /^(\d{2}):(\d{2})$/] // [nombre,cantidadCanciones,duracion]
+    let clases = ["patronNombre", "patronCantidad", "patronDuracion"]
 
     let campos = document.getElementById("cd").getElementsByTagName("input");
 
+    let flag = true;
+
     for (let i = 0; i < campos.length; i++) {
 
-        if (campos[i].className === "patronNombre") {
-            if (!testear(patronNombres, campos[i].value)) {
-                alert("Datos incorrectos")
-                campos[i].style.color = "red";
-                break;
-            } else {
-                campos[i].style.color = "black";
+        for (let j = 0; j < clases.length; j++) {
+
+            if (campos[i].className === clases[j]) {
+
+                if (!testear(patrones[j], campos[i].value)) {
+                    
+                    alert("Datos incorrectos")
+                    campos[i].style.color = "red";
+                    flag =false;
+                    break;
+
+                } else {
+                    campos[i].style.color = "black";
+                }
             }
+
         }
 
-        if (campos[i].className === "patronAño") {
-            if (!testear(patronAño, campos[i].value)) {
-                alert("Datos incorrectos")
-                campos[i].style.color = "red";
-                break;
-            } else {
-                campos[i].style.color = "black";
-            }
-        }
-
-        if (campos[i].className === "patronDuracion") {
-            alert("Datos incorrectos")
-            if (!testear(patronDuracion, campos[i].value)) {
-                campos[i].style.color = "red";
-                break;
-            } else {
-                campos[i].style.color = "black";
-            }
+        if (!flag){
+            break;
         }
 
     }
+    
+    if (flag){
+        alert("Datos validos")
+    }
+
+    return flag;
 }
+
 
 
 
