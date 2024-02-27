@@ -13,52 +13,55 @@
 
     <!-- 2) Realice un formulario que contenga Nombre, Apellido, Sexo, Fecha de nacimiento y mail.
     Luego realice las validaciones para cada uno de los campos. -->
-     <br>
-     <br>
+
+    <br>
+    <br>
     <h2>Ingreso de datos</h2>
 
-    <form name="formulario"
-        onsubmit="event.preventDefault(); validar(this.nombre.value, this.apellido.value, this.email.value)">
+    <form name="formulario" onsubmit="return validar(this.nombre.value, this.apellido.value, this.email.value, this.fecha.value)">
 
         <div id="c1">
             <div id="c2">
-                <div id="nombre">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" size="20" maxlength="20" required>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" size="20">
                     <br>
                     <br>
                 </div>
 
-                <div id="apellido">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" size="20" maxlength="20" required>
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <br>
+                    <input type="text" name="apellido" id="apellido" size="20">
                     <br>
                     <br>
                 </div>
 
-                <div id="email">
-                    <label for="email">Correo E</label>
-                    <input type="text" name="email" id="email" size="20" maxlength="20" required>
+                <div>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="text" name="email" id="email" size="20">
                     <br>
                     <br>
                 </div>
 
-                <div id="fecha">
-                    <label>Fecha de nacimiento</label>
-                    <input type="date" name="fecha" id="fecha" max="2005-01-01" value="2000-01-01" required>
+                <div>
+                    <label>Fecha de nacimiento:</label>
+                    <br>
+                    <input type="text" name="fecha" id="fecha" placeholder="dd-mm-aaaa">
                     <br>
                     <br>
                 </div>
 
 
-                <div id="sexo">
-                    <label for="sexo">Sexo</label>
+                <div>
+                    <label>Sexo:</label>
                     <br>
-                    <br>
-                    <label for="sexo">Masculino</label>
-                    <input type="radio" name="sexo" id="sexo-masc" value="masculino" required>
-                    <label for="sexo">Femenino</label>
-                    <input type="radio" name="sexo" id="sexo-fem" value="femenino" required>
+                    <label for="sexom">Masculino</label>
+                    <input type="radio" name="sexo" id="sexom" value="masculino" checked>
+                    <label for="sexof">Femenino</label>
+                    <input type="radio" name="sexo" id="sexof" value="femenino">
                 </div>
                 <br>
                 <div id="boton">
