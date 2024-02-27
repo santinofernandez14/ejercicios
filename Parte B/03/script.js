@@ -12,7 +12,7 @@ function validar(nombre, email){
     
     if(patronNombre.test(nombre) && patronEmail.test(email)){
     alert("Datos validos")
-    }else{
+    }else if(patronNombre.test(nombre)=="" || patronEmail.test(email)==""){
         alert("Datos incorrectos")
     }
     
