@@ -7,7 +7,9 @@ function validar(numero){
 
     if(expresion.test(numero)){
         alert('Datos Correctos')
+        return true;
     }else{
         alert('Datos Incorrectos')
+        return false;
     }
 }
