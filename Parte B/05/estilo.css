@@ -1,0 +1,29 @@
+/* 5) Realice una página donde el usuario pueda cargar un contacto. El contacto de esa
+persona debe tener al menos un teléfono y como máximo 3. Además debe ser obligatoria la
+carga del mail. Realice las validaciones necesarias. */
+
+body {
+    background-color: palevioletred;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#c1{
+ margin-top: 6%;   
+display: flex;
+justify-content: center;
+
+}
+form{
+border: 6px outset pink;
+padding: 3%;
+}
+
+#boton{
+    display: flex;
+    justify-content: center;
+}
+

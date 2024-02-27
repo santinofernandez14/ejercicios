@@ -6,9 +6,9 @@
 
 function validar(nombre, email){
 
-    let patronNombre= /^[a-zA-Z\s]+$/
+    let patronNombre= /^[a-zA-Z\s]+$/;
     
-    let patronEmail= /^\S+@\S+\.\S+$/
+    let patronEmail= /^\S+@\S+\.\S+$/;
     
     if(patronNombre.test(nombre) && patronEmail.test(email)){
     alert("Datos validos")
