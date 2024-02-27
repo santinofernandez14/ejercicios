@@ -5,19 +5,23 @@
 function validar() {
         
     let miFormulario = document.forms["formulario"]
+    let nombre = miFormulario.nombre.value;
+    let apellido = miFormulario.apellido.value;
     let gmail2 = miFormulario.gmail.value; 
     let numero = miFormulario.numero.value;
+    
     let patronEmail= /^\S+@\S+\.\S+$/;
 
     console.log("Este es su mail :" + gmail2)
     
-    if (patronEmail.test(gmail2) || gmail2=="" || isNaN(numero) || numero == "") {
+    if ( !patronEmail.test(gmail2) || gmail2 == "" || isNaN(numero) || numero == "" || nombre=="" || apellido=="") {
         alert("Ingrese bien los campos")
-        return true;
+        return false;
     } else {
 
         alert("Su usuario se ingreso con exito")
-        return false;
+
+        return true;
     }
 
 }
