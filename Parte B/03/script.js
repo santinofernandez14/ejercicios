@@ -4,16 +4,25 @@
 // entre 18 y 30. La dirección de correo debe incluir una arroba y su longitud sea superior a
 // cinco caracteres.
 
-function validar(nombre, email){
-
+function validar(){
+    var miformulario=document.forms["formulario_n"]
     let patronNombre= /^[a-zA-Z\s]+$/;
     
     let patronEmail= /^\S+@\S+\.\S+$/;
-    
-    if(patronNombre.test(nombre) && patronEmail.test(email)){
+
+   
+    let valor=miformulario.nombre.value;
+    let valor4=miformulario.gmail.value
+    console.log(valor4)
+    if(patronNombre.test(valor) && patronEmail.test(valor4)){
     alert("Datos validos")
-    }else if(patronNombre.test(nombre)=="" || patronEmail.test(email)==""){
+    return true;
+    }else if(patronNombre.test(valor)=="" || patronEmail.test(valor4)==""){
         alert("Datos incorrectos")
+        return false;
+    }else{
+        alert("datos incorrectos")
+        return false;
     }
     
     }

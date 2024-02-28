@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingreso de datos</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="estilos.css">
 </head>
 
@@ -13,59 +13,54 @@
 
     <!-- 2) Realice un formulario que contenga Nombre, Apellido, Sexo, Fecha de nacimiento y mail.
     Luego realice las validaciones para cada uno de los campos. -->
-
-    <br>
-    <br>
+     <br>
+     <br>
     <h2>Ingreso de datos</h2>
 
-    <form name="formulario" onsubmit="return validar(this.nombre.value, this.apellido.value, this.email.value, this.fecha.value)">
+    <form action="#" name="formulario" onsubmit= "return validar()" method="post">
 
         <div id="c1">
             <div id="c2">
-                <div>
-                    <label for="nombre">Nombre:</label>
+                
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" size="20" maxlength="20" required>
                     <br>
-                    <input type="text" name="nombre" id="nombre" size="20">
                     <br>
-                    <br>
-                </div>
+                
 
-                <div>
-                    <label for="apellido">Apellido:</label>
+               
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" size="20" maxlength="20" required>
                     <br>
-                    <input type="text" name="apellido" id="apellido" size="20">
                     <br>
-                    <br>
-                </div>
+               
 
-                <div>
-                    <label for="email">Email:</label>
+                
+                    <label for="gmail">Email</label>
+                    <input type="text" id="gmail" name="gmail">
                     <br>
-                    <input type="text" name="email" id="email" size="20">
                     <br>
-                    <br>
-                </div>
 
-                <div>
-                    <label>Fecha de nacimiento:</label>
+              
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha" max="2005-01-01"  required>
                     <br>
-                    <input type="text" name="fecha" id="fecha" placeholder="dd-mm-aaaa">
                     <br>
-                    <br>
-                </div>
+              
 
 
-                <div>
-                    <label>Sexo:</label>
+                
+                    <label for="sexo">Sexo</label>
                     <br>
-                    <label for="sexom">Masculino</label>
-                    <input type="radio" name="sexo" id="sexom" value="masculino" checked>
-                    <label for="sexof">Femenino</label>
-                    <input type="radio" name="sexo" id="sexof" value="femenino">
-                </div>
+                    <br>
+                    <label for="sexo4">Masculino</label>
+                    <input type="radio" name="sexo" id="sexo4" value="masculino" required>
+                    <label for="sexo">Femenino</label>
+                    <input type="radio" name="sexo" id="sexo" value="femenino" required>
+               
                 <br>
-                <div id="boton">
-                    <input type="submit" value="Enviar">
+                <div id="enviar">
+                    <input type="submit" value="enviar">
                 </div>
             </div>
         </div>

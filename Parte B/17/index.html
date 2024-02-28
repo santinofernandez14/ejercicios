@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="estilo.css">
+    
 </head>
-
 <body>
+    <div id="caja">
+        <h1 class="titulo">Ejercicio17</h1>
 
-    <!-- 17) Realice una página que escriba en un campo de texto una cadena. La cadena debe ser
-    escrita de a una letra por vez y el tiempo entre escritura de la letra debe ser 700ms. -->
-
-    <div id="c2">
-        <div id="c1">
-            <h2>Ejercicio 17</h2>
-            <br>
-            <br>
-            <div id="caja">
-                <label for="box">Ingrese una palabra</label>
-                <input id="box" type="text" name="box" oninput="esperar()">
-            </div>
-        </div>
     </div>
+    <div id="caja">
+        <div id="c1">
+        <input type="text" name="frase" class="caja" id="fraseIngresada" 
+        placeholder="Ingrese su frase">
+        <input type="button" class="btn" id="btn"
+        value="Comprobar">
+    </div>
+    </div>
+    <div id="p">
+    <p id="respuesta"></p>
+    </div>
+    
 </body>
-
 </html>
